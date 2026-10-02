@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>Brilliant SMB — The human engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root { --ink:#17202a; --navy:#12202c; --cream:#f7f8f6; --teal:#3098B8; --teal-d:#1f7c99; --lime:#88B020; --muted:#5c6874; --line:rgba(18,32,44,.1); }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--cream); color:var(--ink); }
+  body { font-family:Outfit,"Avenir Next",sans-serif; }
+  a { color:inherit; text-decoration:none; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding:18px 56px; background:#fff; border-bottom:1px solid var(--line); }
+  .brand img { height:48px; display:block; }
+  .links { display:flex; gap:22px; }
+  .links a { color:#546170; font-size:12px; letter-spacing:.14em; font-weight:500; text-transform:uppercase; }
+  .links a.on { color:var(--navy); }
+  .btn { display:inline-block; background:var(--navy); color:#f4f7f5; border-radius:999px; padding:12px 18px; font-size:11px; letter-spacing:.14em; font-weight:500; border:0; }
+  .btn.teal { background:var(--teal-d); }
+  .hero { background:radial-gradient(780px 420px at 88% 0%, rgba(48,152,184,.22), transparent 62%), linear-gradient(165deg,#101820 0%,#163044 72%,#1a2a22 100%); color:#f4f7f5; padding:72px 56px 64px; }
+  .kicker { letter-spacing:.22em; font-size:11px; color:#8fd0e4; font-weight:500; text-transform:uppercase; margin-bottom:16px; }
+  h1 { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:56px; line-height:.98; margin:0 0 18px; letter-spacing:-.02em; max-width:860px; }
+  h1 em { font-style:italic; color:#d7e7a4; }
+  .lede { max-width:640px; font-size:18px; line-height:1.55; color:#e6eeea; font-weight:300; }
+  .actions { display:flex; align-items:center; gap:18px; margin-top:26px; }
+  .ghost { color:#d5ddd8; font-size:14px; border-bottom:1px solid rgba(143,208,228,.55); padding-bottom:2px; }
+  section { padding:64px 56px; }
+  h2 { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:36px; line-height:1.05; margin:0 0 14px; color:var(--navy); }
+  h2 em { font-style:italic; color:var(--teal-d); }
+  .prose { max-width:720px; }
+  .prose p, .card p { color:var(--muted); font-size:16.5px; line-height:1.62; margin:0 0 14px; }
+  .split { display:grid; grid-template-columns:.8fr 1.2fr; gap:48px; align-items:start; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px; }
+  .grid.two { grid-template-columns:1fr 1fr; }
+  .grid.four { grid-template-columns:repeat(4,1fr); }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:24px; }
+  .card .num { color:var(--teal-d); letter-spacing:.16em; font-size:11px; font-weight:600; text-transform:uppercase; }
+  .card h3 { font-family:Fraunces,Georgia,serif; font-size:24px; font-weight:500; margin:10px 0 8px; color:var(--navy); }
+  .card.dark { background:var(--navy); border:none; }
+  .card.dark h3, .card.dark .num { color:#d7e7a4; }
+  .card.dark p { color:rgba(244,247,245,.78); }
+  .band { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .soft { background:#eef6e4; }
+  .soft p { color:#3e4c3a; }
+  form { display:grid; gap:14px; max-width:560px; }
+  label { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#546170; }
+  input, textarea { width:100%; border:1px solid var(--line); border-radius:12px; padding:14px 16px; font:inherit; font-size:15px; background:#fff; color:var(--ink); }
+  textarea { min-height:140px; resize:vertical; }
+  .note { font-size:13px; color:var(--muted); }
+  footer { padding:20px 56px; display:flex; justify-content:space-between; align-items:center; background:#fff; border-top:1px solid var(--line); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  footer img { height:34px; }
+</style></head><body>
+<nav><a class="brand" href="index.html"><img src="logo.jpg" alt="Brilliant SMB"/></a>
+<div class="links"><a href="engine.html">The engine</a><a href="work.html">The work</a><a href="beside.html">Beside the tool</a><a href="fit.html">Fit</a><a href="counsel.html">Private counsel</a></div>
+<a class="btn" href="counsel.html">Begin a conversation</a></nav>
+
+<header class="hero">
+  <div class="kicker">Boutique counsel · the people who run the work</div>
+  <h1>The human engine.<br><em>Not the statement.</em></h1>
+  <p class="lede">Organizations change when the people who run the work become more productive. That is the engagement. We start with the human elements, and we link them to output. A plaque can be finished. A week cannot be faked.</p>
+  <div class="actions"><a class="btn teal" href="counsel.html">Begin a conversation</a><a class="ghost" href="engine.html">Read the practice</a></div>
+</header>
+<section>
+  <div class="prose"><p>The practice has one order. Human elements, then productivity, then innovation. We do not reverse it. Training so a deck can say it happened is not the work. A values statement that will be meaningless in a few years is not the company. A tool on every desk is not a new week.</p></div>
+  <div class="grid four" style="margin-top:22px;">
+    <article class="card"><h3>The document is not the company</h3><p>A plaque can be rewritten in a quarter. The company is still the week.</p></article>
+    <article class="card"><h3>A receipt is not a result</h3><p>If Tuesday looks the same, the workshop was a record of attendance.</p></article>
+    <article class="card"><h3>Output, not an engagement score</h3><p>The link is whether the work moved. Not whether the room felt aligned.</p></article>
+    <article class="card"><h3>Knowledge stays in the room</h3><p>At the end, the team keeps the way. We do not.</p></article>
+  </div>
+</section>
+<section class="band">
+  <h2>Four doors. <em>One practice.</em></h2>
+  <p class="prose">Each door is a page. The practice is the same on all of them.</p>
+  <div class="grid two">
+    <a class="card" href="engine.html"><div class="num">The engine</div><h3>The plaque will be meaningless</h3><p>What people do. What gets in the way. What makes them productive. Decisions, waits, handoffs, and the process kept because it has always been kept.</p></a>
+    <a class="card" href="work.html"><div class="num">The work</div><h3>A receipt is not a result</h3><p>See the engine. Link it to output. Leave it there. The order is the method. It does not have a name.</p></a>
+    <a class="card" href="beside.html"><div class="num">Beside the tool</div><h3>Tools get cheap</h3><p>The engine does not. A specialist comes in for the instrument. The firm holds the system. Installing is not the result.</p></a>
+    <a class="card" href="fit.html"><div class="num">Fit</div><h3>Not for the old way</h3><p>If the answer is how we have always done it, this is the wrong room. Invitation is a fit standard.</p></a>
+  </div>
+</section>
+<footer><img src="logo.jpg" alt="Brilliant SMB"/><span>A public door, not the room</span></footer></body></html>

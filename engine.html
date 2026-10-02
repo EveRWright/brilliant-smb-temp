@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The engine — Brilliant SMB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root { --ink:#17202a; --navy:#12202c; --cream:#f7f8f6; --teal:#3098B8; --teal-d:#1f7c99; --lime:#88B020; --muted:#5c6874; --line:rgba(18,32,44,.1); }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--cream); color:var(--ink); }
+  body { font-family:Outfit,"Avenir Next",sans-serif; }
+  a { color:inherit; text-decoration:none; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding:18px 56px; background:#fff; border-bottom:1px solid var(--line); }
+  .brand img { height:48px; display:block; }
+  .links { display:flex; gap:22px; }
+  .links a { color:#546170; font-size:12px; letter-spacing:.14em; font-weight:500; text-transform:uppercase; }
+  .links a.on { color:var(--navy); }
+  .btn { display:inline-block; background:var(--navy); color:#f4f7f5; border-radius:999px; padding:12px 18px; font-size:11px; letter-spacing:.14em; font-weight:500; border:0; cursor:pointer; }
+  .btn.teal { background:var(--teal-d); }
+  .hero { background:radial-gradient(780px 420px at 88% 0%, rgba(48,152,184,.22), transparent 62%), linear-gradient(165deg,#101820 0%,#163044 72%,#1a2a22 100%); color:#f4f7f5; padding:72px 56px 64px; }
+  .kicker { letter-spacing:.22em; font-size:11px; color:#8fd0e4; font-weight:500; text-transform:uppercase; margin-bottom:16px; }
+  h1 { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:56px; line-height:.98; margin:0 0 18px; letter-spacing:-.02em; max-width:860px; }
+  h1 em { font-style:italic; color:#d7e7a4; }
+  .lede { max-width:680px; font-size:18px; line-height:1.55; color:#e6eeea; font-weight:300; }
+  section { padding:68px 56px; }
+  h2 { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:36px; line-height:1.05; margin:0 0 12px; color:var(--navy); }
+  h2 em { font-style:italic; color:var(--teal-d); }
+  .prose { max-width:740px; }
+  .prose p, .card p { color:var(--muted); font-size:16.5px; line-height:1.65; margin:0 0 14px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-top:28px; }
+  .grid.two { grid-template-columns:1fr 1fr; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px 22px 18px; }
+  .card .num { color:var(--teal-d); letter-spacing:.16em; font-size:11px; font-weight:600; text-transform:uppercase; }
+  .card h3 { font-family:Fraunces,Georgia,serif; font-size:24px; font-weight:500; margin:10px 0 8px; color:var(--navy); }
+  .band { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .soft { background:#eef5f7; }
+  .close { background:var(--navy); color:#f4f7f5; padding:56px; display:flex; justify-content:space-between; align-items:end; gap:32px; }
+  .close h2 { color:#f4f7f5; font-size:40px; max-width:680px; }
+  .close p { color:rgba(244,247,245,.72); margin:10px 0 0; max-width:520px; font-size:16px; }
+  footer { padding:20px 56px; display:flex; justify-content:space-between; align-items:center; background:#fff; border-top:1px solid var(--line); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  footer img { height:36px; }
+  form { display:grid; gap:12px; }
+  label { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+  input, textarea { font:inherit; color:var(--ink); background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+  textarea { min-height:120px; resize:vertical; }
+  .note { font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html"><img src="logo.jpg" alt="Brilliant SMB"/></a>
+  <div class="links">
+    <a href="engine.html" class="on">The engine</a>
+    <a href="work.html">The work</a>
+    <a href="beside.html">Beside the tool</a>
+    <a href="fit.html">Fit</a>
+    <a href="counsel.html">Private counsel</a>
+  </div>
+  <a class="btn" href="counsel.html">Begin a conversation</a>
+</nav>
+
+<header class="hero">
+  <div class="kicker">The engine</div>
+  <h1>The plaque will be meaningless <em>in a few years.</em></h1>
+  <p class="lede">A company does not run on a mission, a vision, or a values statement. It runs on the week. Who decides, who waits, what gets finished, and what is quietly dropped when no one is reading the wall.</p>
+</header>
+<section>
+  <h2>We start with the week.</h2>
+  <div class="prose">
+    <p>The human engine is not a softer word for culture. Culture is what the engine produces when it is running well. We do not treat the word as the work. A rewrite of the statement can be finished in a quarter. Tuesday does not notice.</p>
+    <p>A performance review kept because that is what reviews look like has the same problem. It records a conversation the company already decided to have. It does not change how the work moves. The plaque and the review are useful only after someone has looked at the week they are supposed to describe.</p>
+    <p>A principal can already see the engine. A decision that waits for a meeting it does not need. A handoff with no owner. A manager who adds a form instead of removing a block. Authority named on a chart and absent in the room. A process kept because it has always been kept. That is where productivity lives, or does not.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="num">What people do</div>
+      <h3>The real sequence</h3>
+      <p>Who is allowed to decide. Who waits for permission that never comes. Which handoff loses the work between two functions. What gets finished, and what is dropped when the week gets loud. The org chart is not this sequence.</p>
+    </div>
+    <div class="card">
+      <div class="num">What gets in the way</div>
+      <h3>The leak</h3>
+      <p>Unclear authority. Fake work that exists so a form can be filled. A step protected because removing it would admit the old way was expensive. Load that is treated as culture, when it is a constraint on output.</p>
+    </div>
+    <div class="card">
+      <div class="num">What makes them productive</div>
+      <h3>The link</h3>
+      <p>Clarity about the decision. Skill at the point where the work actually stalls. A room that can change its mind. The element has to show up in output. If it cannot be pointed at, it is not the work.</p>
+    </div>
+  </div>
+</section>
+<section class="band">
+  <h2>What a first look covers.</h2>
+  <div class="prose">
+    <p>We do not begin with a survey in place of a look. We name the week in plain language with the people who run it. Where a decision sits. How long it waits. What a handoff is supposed to carry, and what it actually carries. Which meeting exists to report work that has not moved.</p>
+    <p>The point is a leak someone can recognize without a case study. Not a diagnosis deck. Not a new values line. The company already knows most of this. It has usually filed it under culture, or under the way things have always been done.</p>
+  </div>
+  <div class="grid two">
+    <div class="card">
+      <div class="num">We will start here</div>
+      <h3>The human element</h3>
+      <p>The decision right, the handoff, the manager’s habit, the process kept out of protection. Linked, from the first conversation, to whether people can get more done.</p>
+    </div>
+    <div class="card">
+      <div class="num">We will not start here</div>
+      <h3>The document</h3>
+      <p>A poster, a review form, or a workshop whose purpose is the photograph of the workshop. Those can follow a change. They cannot substitute for one.</p>
+    </div>
+  </div>
+</section>
+<div class="close">
+  <div>
+    <h2>The week is the company.</h2>
+    <p>Once the leak is named, the work is how a change gets made and left behind.</p>
+  </div>
+  <a class="btn teal" href="work.html">Read the work</a>
+</div>
+
+<footer>
+  <img src="logo.jpg" alt="Brilliant SMB"/>
+  <span>A public door, not the room</span>
+</footer>
+</body>
+</html>
